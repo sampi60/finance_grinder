@@ -18,12 +18,22 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
-  gem 'byebug', platform: :mri
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'rails-controller-testing' # Brings back `assigns` and `assert_template` to your Rails tests https://github.com/rails/rails-controller-testing
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'shoulda-matchers'
 end
