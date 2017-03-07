@@ -65,4 +65,10 @@ RSpec.configure do |config|
 
   # Use create(:user) instead FactoryGirl.create(:user)
   config.include FactoryGirl::Syntax::Methods
+
+  # devise
+  RSpec.configure do |config|
+    config.include Devise::Test::ControllerHelpers, type: :controller
+    config.include Devise::Test::ControllerHelpers, type: :view
+  end
 end
