@@ -7,4 +7,7 @@ class Category < ApplicationRecord
 
   validates_presence_of :name, :kind, :user_id
   validates :kind, inclusion: { in: KINDS }
+
+  default_scope { order :name }
+  scope :main, -> { where parent_id: nil }
 end
