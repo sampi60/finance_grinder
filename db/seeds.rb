@@ -8,7 +8,7 @@ user = User.create!(
 categories = {
   food: %w( home work city other ),
   home: %w( rent electricity gas equipment other ),
-  telecomumnication: %w( phone internet tv ),
+  telecommunication: %w( phone internet tv ),
   kids: %w( diapers cosmetics medicines toys clothes other )
 }
 

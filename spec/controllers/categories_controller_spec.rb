@@ -10,4 +10,14 @@ RSpec.describe Api::V1::CategoriesController, type: :controller do
       expect(parsed_body.first['name']).to eq 'Food'
     end
   end
+
+  describe 'POST #create' do
+    context 'with valid params' do
+      it 'creates a new category' do
+        expect {
+          post :create, params: { category: { name: 'Toys', kind: 'expense', user_id: create(:user) }}, format: :json
+        }.to change(Category, :count).by(1)
+      end
+    end
+  end
 end

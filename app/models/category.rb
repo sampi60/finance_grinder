@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-  KINDS = %w( income expense )
+  KINDS = %w( expense income )
 
   belongs_to :user
   belongs_to :parent, class_name: 'Category'
