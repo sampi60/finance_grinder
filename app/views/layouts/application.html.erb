@@ -9,9 +9,33 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <nav>
+      <div class="container">
+        <%= link_to 'FinanceGrinder', root_url, class: 'brand-logo' %>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class='active'><a href="#">Categories</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <%= yield %>
+    <div class="container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+
+    </div>
+
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+        © 2017 Copyright <a class='grey-text text-lighten-4' href='http://webgrinder.pl'>WebGrinder</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

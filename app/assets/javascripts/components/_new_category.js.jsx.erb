@@ -16,6 +16,7 @@ var NewCategory = React.createClass({
   render() {
     return (
       <div>
+        <h4>Categories</h4>
         <input ref='name' placeholder='Name' />
         <select ref='kind'>
           <% Category::KINDS.each do |kind| %>
