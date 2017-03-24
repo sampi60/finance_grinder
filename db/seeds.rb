@@ -7,7 +7,7 @@ user = User.create!(
 
 
 [ 'Salary - Mine', 'Salary - Partner', 'Other' ].each do |category|
-  Category.create! name: category, kind: 'income', user: user,
+  Category.create! name: category, kind: 'income', user: user
 end
 
 expenses = {

@@ -22,9 +22,6 @@ var AllCategories = React.createClass({
 
         <div id='incomes'>
           <table className='highlight'>
-            <thead>
-              <th></th>
-            </thead>
             <tbody>
               {incomes}
             </tbody>
@@ -32,9 +29,6 @@ var AllCategories = React.createClass({
         </div>
         <div id='expenses'>
           <table className='highlight'>
-            <thead>
-              <th></th>
-            </thead>
             <tbody>
               {expenses}
             </tbody>
