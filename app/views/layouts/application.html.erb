@@ -14,10 +14,12 @@
         <%= link_to 'FinanceGrinder', root_url, class: 'brand-logo' %>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li class='active'><a href="#">Categories</a></li>
+          <li><%= link_to 'Transactions', transactions_path %></li>
+          <li><%= link_to 'Categories', categories_path %></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="#">Categories</a></li>
+          <li><%= link_to 'Transactions', transactions_path %></li>
+          <li><%= link_to 'Categories', categories_path %></li>
         </ul>
       </div>
     </nav>
